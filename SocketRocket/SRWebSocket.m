@@ -180,7 +180,7 @@ typedef void (^data_callback)(SRWebSocket *webSocket,  NSData *data);
 
 @property (nonatomic) SRReadyState readyState;
 
-@property (nonatomic) NSOperationQueue *delegateOperationQueue;
+@property (atomic) NSOperationQueue *delegateOperationQueue;
 @property (nonatomic) dispatch_queue_t delegateDispatchQueue;
 
 // Specifies whether SSL trust chain should NOT be evaluated.
